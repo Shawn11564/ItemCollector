@@ -1,0 +1,15 @@
+# The delay in seconds between inventory checks (increasing this may improve server performance) (Default: 1)
+inventory-delay-seconds: 1
+
+# Should spawn eggs (excluding chicken eggs) be included? (Default: false)
+include-spawn-eggs: false
+
+# Commands that are run when a player collects all items
+complete-commands:
+  - 'broadcast &a%player% &6has collected all items in the game!'
+  - 'give %player% diamond 64'
+
+# Items that do not need to be collected to win
+blacklisted-items:
+  - 'bedrock'
+  - 'barrier'
