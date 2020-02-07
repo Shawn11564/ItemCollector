@@ -6,10 +6,3 @@ prefix: ItemCollector
 authors: [MrShawn]
 description: Collect every item in the game for a sick reward!
 website: https://mrshawn.dev/
-commands:
-  itemcollector:
-    aliases:
-      - ic
-      - itemcollect
-    description: Base command for the ItemCollector plugin
-    permission: itemcollector.admin

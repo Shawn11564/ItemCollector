@@ -9,7 +9,27 @@ complete-commands:
   - 'broadcast &a%player% &6has collected all items in the game!'
   - 'give %player% diamond 64'
 
+# Check status message
+status-message: '&a%player% &6has collected &5%collected%&6/&5%max% &6items'
+
 # Items that do not need to be collected to win
 blacklisted-items:
-  - 'bedrock'
-  - 'barrier'
+  - 'end_portal_frame'
+  - 'command_block'
+  - 'repeating_command_block'
+  - 'chain_command_block'
+  - 'command_block_minecart'
+  - 'structure_block'
+  - 'structure_void'
+  - 'knowledge_book'
+  - 'spawner'
+  - 'grass_path'
+  - 'farmland'
+  - 'infested_stone'
+  - 'infested_cobblestone'
+  - 'infested_stone_bricks'
+  - 'infested_mossy_stone_bricks'
+  - 'infested_cracked_stone_bricks'
+  - 'infested_chisel_stone_bricks'
+  - 'spawner_minecart'
+  - 'end_portal'

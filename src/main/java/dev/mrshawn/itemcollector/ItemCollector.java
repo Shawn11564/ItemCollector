@@ -1,5 +1,6 @@
 package dev.mrshawn.itemcollector;
 
+import co.aikar.commands.PaperCommandManager;
 import dev.mrshawn.itemcollector.commands.ItemCollectorCMD;
 import dev.mrshawn.itemcollector.files.DataFile;
 import dev.mrshawn.itemcollector.listeners.PlayerJoin;
@@ -38,7 +39,8 @@ public final class ItemCollector extends JavaPlugin {
 
 		getServer().getPluginManager().registerEvents(new PlayerQuit(this), this);
 		getServer().getPluginManager().registerEvents(new PlayerJoin(this), this);
-		getCommand("itemcollector").setExecutor(new ItemCollectorCMD(this));
+		PaperCommandManager pcm = new PaperCommandManager(this);
+		pcm.registerCommand(new ItemCollectorCMD(this));
 	}
 
 	@Override
